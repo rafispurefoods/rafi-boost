@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17172b">
+  <title>RAFI BOOST - SMM Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span>⚡ RAFI BOOST</span>
+    <small>YOUR DIGITAL GROWTH PARTNER</small>
+  </div>
+  <button id="menuBtn">☰</button>
+</header>
+
+<nav id="navigation">
+  <a href="#dashboard">Dashboard</a>
+  <a href="#addfund">Add Fund</a>
+  <a href="#services">Services</a>
+  <a href="#orders">Orders</a>
+  <a href="#history">Transactions</a>
+  <a href="#profile">Profile</a>
+</nav>
+
+<main id="dashboard">
+
+  <section class="stats">
+    <div class="stat-card">
+      <span>🛒</span>
+      <h3 id="totalOrders">0</h3>
+      <p>Total Orders</p>
+    </div>
+
+    <div class="stat-card">
+      <span>💰</span>
+      <h3 id="balance">৳0.00</h3>
+      <p>My Balance</p>
+    </div>
+
+    <div class="stat-card">
+      <span>💳</span>
+      <h3 id="spending">৳0.00</h3>
+      <p>My Spending</p>
+    </div>
+
+    <div class="stat-card">
+      <span>🎁</span>
+      <h3 id="bonus">৳0.00</h3>
+      <p>My Bonus</p>
+    </div>
+  </section>
+
+  <section class="panel" id="addfund">
+    <h2>Add Fund</h2>
+    <p>Choose your payment method</p>
+
+    <div class="payment-methods">
+      <button type="button">bKash</button>
+      <button type="button">Nagad</button>
+      <button type="button">Rocket</button>
+    </div>
+
+    <p>Payment requests will be verified by admin.</p>
+  </section>
+
+  <section class="panel" id="services">
+    <h2>Social Media Services</h2>
+    <div class="social-grid">
+      <div>📸 Instagram</div>
+      <div>📘 Facebook</div>
+      <div>🎵 TikTok</div>
+      <div>▶️ YouTube</div>
+      <div>✈️ Telegram</div>
+      <div>🌐 Website</div>
+    </div>
+  </section>
+
+  <section class="panel order-panel">
+    <h2>New Order</h2>
+
+    <label>Category</label>
+    <select id="category">
+      <option value="">Select Category</option>
+    </select>
+
+    <label>Service</label>
+    <select id="service">
+      <option value="">Select Service</option>
+    </select>
+
+    <label>Link</label>
+    <input type="url" id="link" placeholder="Enter your link">
+
+    <label>Quantity</label>
+    <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+
+    <label>Charge</label>
+    <input type="text" id="charge" readonly placeholder="৳0.00">
+
+    <button type="button" id="orderBtn">Submit Order</button>
+  </section>
+
+  <section class="panel" id="orders">
+    <h2>Order History</h2>
+    <div id="orderHistory">
+      No orders yet.
+    </div>
+  </section>
+
+  <section class="panel" id="history">
+    <h2>Transaction History</h2>
+    <div id="transactionHistory">
+      No transactions yet.
+    </div>
+  </section>
+
+  <section class="panel" id="profile">
+    <h2>My Profile</h2>
+    <p id="userProfile">Please login to view your profile.</p>
+  </section>
+
+</main>
+
+<footer>
+  <h3>RAFI BOOST</h3>
+  <p>YOUR DIGITAL GROWTH PARTNER</p>
+  <p>© 2026 RAFI BOOST</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
