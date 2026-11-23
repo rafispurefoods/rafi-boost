@@ -1,0 +1,220 @@
+/* RAFI BOOST - MAIN DESIGN */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f3f9;
+  color: #25253a;
+}
+
+.topbar {
+  background: #202039;
+  color: white;
+  padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.brand span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #a78bfa;
+}
+
+.brand small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+#menuBtn {
+  background: #6935ed;
+  color: white;
+  border: none;
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav {
+  background: #292943;
+  padding: 12px;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.stat-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000008;
+}
+
+.stat-card span {
+  font-size: 25px;
+}
+
+.stat-card h3 {
+  font-size: 19px;
+  margin: 8px 0 4px;
+  color: #6635e9;
+}
+
+.stat-card p {
+  color: #888;
+  font-size: 12px;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 13px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px #00000008;
+}
+
+.panel h2 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.panel p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.payment-methods button {
+  padding: 13px 5px;
+  background: #28283f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.social-grid div {
+  background: #292940;
+  color: white;
+  padding: 17px 5px;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 13px 0 7px;
+}
+
+input, select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #7138ed;
+}
+
+#orderBtn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #7138ed, #5124d5);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+footer {
+  background: #202039;
+  color: white;
+  text-align: center;
+  padding: 28px 10px;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@media (min-width: 700px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 10px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+
+  .stat-card {
+    padding: 13px;
+  }
+}
